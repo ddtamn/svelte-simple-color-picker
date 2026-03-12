@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ColorPicker } from '$lib/index.js';
-	let selectedColor = $state('#3b82f6');
+	let selectedColor = $state('#f96743');
 </script>
 
 <main

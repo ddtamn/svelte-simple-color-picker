@@ -1,6 +1,7 @@
 {
 	"name": "svelte-simple-color-picker",
 	"version": "0.0.1",
+	"description": "A modular and headless-friendly Svelte 5 color picker",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
@@ -65,8 +66,18 @@
 		"vitest-browser-svelte": "^2.0.2"
 	},
 	"keywords": [
-		"svelte"
+		"svelte",
+		"svelte 5",
+		"color-picker",
+		"color",
+		"ui"
 	],
+	"author": "ddtamn",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ddtamn/svelte-simple-color-picker.git"
+	},
 	"dependencies": {
 		"colord": "^2.9.3"
 	}

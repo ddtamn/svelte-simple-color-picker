@@ -11,8 +11,8 @@ export function draggable(node: HTMLElement, onDrag: (pos: DragPosition) => void
 	function handleMove(e: PointerEvent) {
 		const rect = node.getBoundingClientRect();
 
-		const x = Math.min(Math.max((e.clientX - rect.left) / rect.width, 0), 1);
-		const y = Math.min(Math.max((e.clientY - rect.top) / rect.height, 0), 1);
+		const x = clamp((e.clientX - rect.left) / rect.width, 0, 1);
+		const y = clamp((e.clientY - rect.top) / rect.height, 0, 1);
 		console.log('drag move', x, y);
 		onDrag({ x, y, event: e });
 	}
