@@ -1,6 +1,6 @@
 {
 	"name": "svelte-simple-color-picker",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A modular and headless-friendly Svelte 5 color picker",
 	"scripts": {
 		"dev": "vite dev",
