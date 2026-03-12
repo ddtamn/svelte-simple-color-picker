@@ -21,21 +21,17 @@
 
 	setContext('COLOR_CTX', colorStore);
 
-	// 1) Sinkronisasi dari prop -> store (hanya ketika value dari luar berubah)
 	$effect(() => {
 		if (!value) return;
-		// Dibungkus untrack supaya effect ini TIDAK subscribe ke perubahan internal
 		const currentHex = untrack(() => colorStore.hex);
 		if (currentHex.toLocaleLowerCase() !== value.toLocaleLowerCase()) {
 			colorStore.updateFromHex(value);
 		}
 	});
 
-	// 2) Sinkronisasi dari store -> parent (saat user drag/mengubah warna di dalam)
 	$effect(() => {
 		const currentHex = colorStore.hex;
 		if (onChange && currentHex.toLocaleLowerCase() !== value.toLocaleLowerCase()) {
-			// onChange bisa mengubah prop value di parent
 			untrack(() => onChange(currentHex));
 		}
 	});

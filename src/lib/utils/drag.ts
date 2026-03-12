@@ -7,7 +7,6 @@ interface DragPosition {
 }
 
 export function draggable(node: HTMLElement, onDrag: (pos: DragPosition) => void) {
-	console.log('draggable init', node);
 	function handleMove(e: PointerEvent) {
 		const rect = node.getBoundingClientRect();
 
@@ -18,7 +17,6 @@ export function draggable(node: HTMLElement, onDrag: (pos: DragPosition) => void
 	}
 
 	function handleDown(e: PointerEvent) {
-		console.log('pointer down', e.type);
 		e.preventDefault();
 
 		try {
