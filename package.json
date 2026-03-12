@@ -79,7 +79,6 @@
 		"url": "git+https://github.com/ddtamn/svelte-simple-color-picker.git"
 	},
 	"dependencies": {
-		"colord": "^2.9.3",
-		"svelte-simple-color-picker": "^0.0.1"
+		"colord": "^2.9.3"
 	}
 }

@@ -11,9 +11,6 @@ importers:
       colord:
         specifier: ^2.9.3
         version: 2.9.3
-      svelte-simple-color-picker:
-        specifier: ^0.0.1
-        version: 0.0.1(svelte@5.53.11)
     devDependencies:
       '@eslint/compat':
         specifier: ^2.0.2
@@ -1485,11 +1482,6 @@ packages:
       svelte:
         optional: true
 
-  svelte-simple-color-picker@0.0.1:
-    resolution: {integrity: sha512-S5EQY4r0lCki/Cnj3wsVdAJyheoyo3DiO1GhM4YAN2SvlySsA18FjboofvQVzwhTQOAmaDTlmxA5GsYBnMXQew==}
-    peerDependencies:
-      svelte: ^5.0.0
-
   svelte2tsx@0.7.52:
     resolution: {integrity: sha512-svdT1FTrCLpvlU62evO5YdJt/kQ7nxgQxII/9BpQUvKr+GJRVdAXNVw8UWOt0fhoe5uWKyU0WsUTMRVAtRbMQg==}
     peerDependencies:
@@ -2858,11 +2850,6 @@ snapshots:
       postcss-selector-parser: 7.1.1
       semver: 7.7.4
     optionalDependencies:
-      svelte: 5.53.11
-
-  svelte-simple-color-picker@0.0.1(svelte@5.53.11):
-    dependencies:
-      colord: 2.9.3
       svelte: 5.53.11
 
   svelte2tsx@0.7.52(svelte@5.53.11)(typescript@5.9.3):
